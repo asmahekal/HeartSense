@@ -1,0 +1,12 @@
+Column,Description
+RecordID,Row number in heart.csv (1 = first data row)
+SourceCohort / SourceFile / SourceRow,Linked UCI processed file and 1-based line number
+LinkageCost_outcome_used,Number of disagreements with the linked source record (primary linkage; 0 = exact)
+MatchUnique_outcome_used,1 if the linked record was the only zero-cost candidate
+MatchAmbiguousAcrossCohorts,1 if equally good candidates existed in more than one cohort
+SameMatch_outcome_blinded,1 if outcome-blinded linkage selected the same source record
+HeartDisease,Outcome in heart.csv (1 = heart disease)
+Source_num,"UCI 'num' value of the linked record; HeartDisease = 1 if num > 0, else 0"
+<Predictor>_source_value,"Value in the UCI processed file ('?' = not recorded), UCI coding"
+<Predictor>_distributed_value,Value in heart.csv
+<Predictor>_status,"source_recorded: present in source; completed: '?' in source but present in heart.csv; source_zero_coded: 0 in source (Cholesterol/RestingBP), treated as not recorded in the primary analysis"
