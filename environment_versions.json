@@ -1,0 +1,13 @@
+{
+  "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+  "numpy": "2.0.2",
+  "pandas": "2.3.3",
+  "scipy": "1.16.3",
+  "statsmodels": "0.14.6",
+  "scikit-learn": "1.6.1",
+  "xgboost": "3.2.0",
+  "lightgbm": "4.6.0",
+  "catboost": "1.2.10",
+  "seed": 42
+}

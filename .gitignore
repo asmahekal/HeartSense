@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+HeartSense_*_Results/
+HeartSense_*.zip
+HeartSense_Revision/
+HeartSense_Provenance/
+HeartSense_STSlope_Check/
+heart.csv
+processed.*.data
