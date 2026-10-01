@@ -1,15 +1,14 @@
 # Source-linked provenance audit of the Heart Failure Prediction Dataset
 
-Code and record-level provenance accompanying the manuscript *"Outcome-encoding value completion in a widely used heart-disease benchmark: a source-linked audit of the 918-patient Heart Failure Prediction Dataset"*.
 
-## Data (not redistributed here)
+## Data 
 1. **Distributed file** – `heart.csv` from Kaggle, *Heart Failure Prediction Dataset* (fedesoriano, 2021), doi:10.34740/KAGGLE/DS/2162210.
 2. **Source files** – UCI Heart Disease repository (doi:10.24432/C52P4X):
    `processed.cleveland.data`, `processed.hungarian.data`, `processed.switzerland.data`, `processed.va.data`.
 
 Scripts look for these files under `/kaggle/input` (any sub-folder) or the working directory, and otherwise download the UCI files from `https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/`.
 
-## Coding map (UCI -> distributed file)
+## Coding map 
 | Variable | UCI | Distributed |
 |---|---|---|
 | sex | 1 / 0 | M / F |
@@ -20,7 +19,7 @@ Scripts look for these files under `/kaggle/input` (any sub-folder) or the worki
 | num | 0 / 1-4 | HeartDisease 0 / 1 |
 | missing | `?` | (no missing values) |
 
-## Scripts (run in order; each is self-contained and can be pasted into one notebook cell)
+## Scripts 
 | Script | Purpose | Output |
 |---|---|---|
 | `00_feature_tiers_distributed.ipynb` | Feature-tier analysis on the file as distributed (Core-6/8/9/Extended-11, six classifiers, robustness, calibration) | `HeartSense_V3_Results_Bundle.zip` |
